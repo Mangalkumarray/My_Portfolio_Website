@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mangal Kumar | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #111827;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav h2 {
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Home */
+        #home {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #0f172a, #1e3a8a);
+            color: white;
+            padding: 30px;
+        }
+
+        #home h1 {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        #home h1 span {
+            color: #38bdf8;
+        }
+
+        #home p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #38bdf8;
+            color: #111827;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+
+        /* Common Section */
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #111827;
+        }
+
+        /* About */
+        .about {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 20px 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            font-weight: bold;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .project {
+            background-color: white;
+            width: 300px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .project h3 {
+            margin-bottom: 12px;
+            color: #1e3a8a;
+        }
+
+        .project p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Education */
+        .education {
+            max-width: 700px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .education p {
+            margin: 12px 0;
+            font-size: 18px;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 12px;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            #home h1 {
+                font-size: 35px;
+            }
+
+            #home p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>Mangal Kumar</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home">
+
+        <div>
+            <h1>Hello, I'm <span>Mangal Kumar</span></h1>
+
+            <p>
+                Web Development Student | Python Beginner | Future Developer
+            </p>
+
+            <a href="#projects" class="btn">
+                View My Projects
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About Me</h2>
+
+        <div class="about">
+            <p>
+                Hello! My name is Mangal Kumar. I am a student interested
+                in Web Development and Programming. I am learning HTML,
+                CSS, JavaScript and Python. I am looking for an internship
+                opportunity where I can improve my technical skills and
+                gain real-world experience.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills">
+
+        <h2>My Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill">HTML</div>
+
+            <div class="skill">CSS</div>
+
+            <div class="skill">JavaScript</div>
+
+            <div class="skill">Python</div>
+
+            <div class="skill">Git & GitHub</div>
+
+            <div class="skill">MS Office</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+
+        <h2>My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project">
+
+                <h3>Digital Timer</h3>
+
+                <p>
+                    A digital timer clock developed using Python
+                    programming language.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    A responsive personal portfolio website created
+                    using HTML and CSS.
+                </p>
+
+            </div>
+
+
+            <div class="project">
+
+                <h3>Student Project</h3>
+
+                <p>
+                    A simple web-based project created to practice
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section id="education">
+
+        <h2>Education</h2>
+
+        <div class="education">
+
+            <p><strong>Course:</strong> B.Tech (computer science engeering) </p>
+
+            <p><strong>College:</strong> GITM ,gurgram</p>
+
+            <p><strong>Year:</strong> 2026</p>
+
+            <p><strong>Location:</strong> India</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+
+            <p>📧 Email: krmangal000@gmail.com</p>
+
+            <p>📱 Phone: +917644979669</p>
+
+            <p>📍 Location: India</p>
+
+            <br>
+
+            <a href="mailto:krmangal000@gmail.com" class="btn">
+                Send Email
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Mangal Kumar | Developed by Mangal Kumar
+        </p>
+
+    </footer>
+
+</body>
+</html>
